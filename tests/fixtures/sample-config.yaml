@@ -1,0 +1,4 @@
+client_id: "12345"
+api_key: "your-api-key-here"
+rate_limit_rpm: 60
+webhook_secret: "your-webhook-secret"

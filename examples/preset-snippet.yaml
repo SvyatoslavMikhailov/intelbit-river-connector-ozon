@@ -1,0 +1,35 @@
+# Фрагмент preset.yaml — маркетплейс Ozon ↔ 1С УТ 11.5
+# Целевой сценарий пилота Cyberflot (Care Friend / Fidelica)
+# Вставить в секции connectors и workflows вашего preset.yaml
+
+connectors:
+  ozon:
+    plugin: intelbit-river-connector-ozon
+    version: ">=0.1.0"
+    config:
+      client_id: "${secrets.OZON_CLIENT_ID}"
+      api_key: "${secrets.OZON_API_KEY}"
+      rate_limit_rpm: 60
+      webhook_secret: "${secrets.OZON_WEBHOOK_SECRET}"
+
+  onec:
+    plugin: intelbit-river-connector-onec
+    version: ">=0.1.0"
+    config:
+      base_url: "${secrets.ONEC_URL}"
+      auth_type: basic
+      username: "${secrets.ONEC_USER}"
+      password: "${secrets.ONEC_PASSWORD}"
+
+# Пример workflow: новый заказ Ozon → создание заказа в 1С
+# workflows:
+#   - id: ozon-order-to-1c
+#     trigger:
+#       type: event
+#       on_event: ozon.posting.created
+#     steps:
+#       - id: create-order-in-1c
+#         type: call
+#         connector: onec
+#         action: write
+#         entity: SalesOrder
