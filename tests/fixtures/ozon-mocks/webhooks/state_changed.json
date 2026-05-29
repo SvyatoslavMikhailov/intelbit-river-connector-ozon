@@ -1,0 +1,8 @@
+{
+  "message_type": "TYPE_STATE_CHANGED",
+  "message_id": "msg-0002",
+  "seller_id": 7777,
+  "posting_number": "12345678-0002-1",
+  "old_state": "awaiting_packaging",
+  "new_state": "awaiting_deliver"
+}

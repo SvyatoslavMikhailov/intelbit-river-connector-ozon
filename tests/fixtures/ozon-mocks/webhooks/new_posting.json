@@ -1,0 +1,10 @@
+{
+  "message_type": "TYPE_NEW_POSTING",
+  "message_id": "msg-0001",
+  "seller_id": 7777,
+  "posting_number": "12345678-0001-1",
+  "warehouse_id": 22222,
+  "products": [
+    {"sku": 123456, "quantity": 2}
+  ]
+}
