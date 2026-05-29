@@ -25,6 +25,7 @@ dev = [
     "pytest-httpx",
     "respx",
     "fakeredis",
+    "fastapi",
     "types-PyYAML",
 ]
 
@@ -51,3 +52,6 @@ files = ["src"]
 asyncio_mode = "auto"
 testpaths = ["tests"]
 addopts = "--import-mode=importlib"
+markers = [
+    "contract: end-to-end contract-тесты против FastAPI-мока Ozon (ASGITransport)",
+]
