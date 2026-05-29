@@ -1,0 +1,30 @@
+{
+  "result": [
+    {
+      "id": 555001,
+      "offer_id": "CF-0001",
+      "attributes": [
+        {"attribute_id": 85, "name": "Бренд", "values": [{"dictionary_value_id": 9001, "value": "Care Friend"}]},
+        {"attribute_id": 10096, "name": "Цвет", "values": [{"dictionary_value_id": 9100, "value": "Серый"}]},
+        {"attribute_id": 4180, "name": "Материал наполнителя", "values": [{"value": "Memory foam"}]}
+      ]
+    },
+    {
+      "id": 555002,
+      "offer_id": "CF-0002",
+      "attributes": [
+        {"attribute_id": 85, "name": "Бренд", "values": [{"dictionary_value_id": 9002, "value": "Fidelica"}]},
+        {"attribute_id": 10096, "name": "Цвет", "values": [
+          {"dictionary_value_id": 9101, "value": "Бежевый"},
+          {"dictionary_value_id": 9102, "value": "Молочный"}
+        ]}
+      ]
+    },
+    {
+      "id": 555003,
+      "offer_id": "CF-0003",
+      "attributes": []
+    }
+  ],
+  "last_id": ""
+}

@@ -1,0 +1,59 @@
+{
+  "result": {
+    "items": [
+      {
+        "id": 555001,
+        "offer_id": "CF-0001",
+        "name": "Care Friend подушка ортопедическая",
+        "description": "Ортопедическая подушка с эффектом памяти.",
+        "barcode": "4600000000017",
+        "barcodes": ["4600000000017", "4600000000018"],
+        "primary_image": "https://cdn1.ozone.ru/cf-0001-main.jpg",
+        "images": [
+          "https://cdn1.ozone.ru/cf-0001-main.jpg",
+          "https://cdn1.ozone.ru/cf-0001-side.jpg"
+        ],
+        "weight": 800,
+        "depth": 600,
+        "width": 400,
+        "height": 150
+      },
+      {
+        "id": 555002,
+        "offer_id": "CF-0002",
+        "name": "Fidelica плед хлопковый",
+        "description": "Плед из 100% хлопка.",
+        "barcode": "4600000000024",
+        "images": [
+          {"file_name": "https://cdn1.ozone.ru/cf-0002-1.jpg", "default": true, "index": 0},
+          {"file_name": "https://cdn1.ozone.ru/cf-0002-2.jpg", "default": false, "index": 1}
+        ],
+        "weight": 1200
+      },
+      {
+        "id": 555003,
+        "offer_id": "CF-0003",
+        "name": "Care Friend чехол",
+        "images": []
+      },
+      {
+        "id": 555004,
+        "offer_id": "CF-0004",
+        "name": "Fidelica наволочка",
+        "description": "Сменная наволочка.",
+        "images": ["https://cdn1.ozone.ru/cf-0004.jpg"]
+      },
+      {
+        "id": 555005,
+        "offer_id": "CF-0005",
+        "name": "Care Friend комплект",
+        "barcodes": ["4600000000055"],
+        "images": ["https://cdn1.ozone.ru/cf-0005.jpg"],
+        "weight": 2000,
+        "depth": 700,
+        "width": 500,
+        "height": 200
+      }
+    ]
+  }
+}

@@ -25,6 +25,16 @@ from intelbit_river_connector_ozon.models import (
 )
 from intelbit_river_connector_ozon.orders import OzonOrdersClient
 from intelbit_river_connector_ozon.prices import OzonPricesClient
+from intelbit_river_connector_ozon.product_models import (
+    AttributesPage,
+    OzonImage,
+    OzonProductAttribute,
+    OzonProductAttributes,
+    OzonProductInfo,
+    ProductListItem,
+    ProductListPage,
+)
+from intelbit_river_connector_ozon.products import OzonProductsClient
 from intelbit_river_connector_ozon.rate_limiter import (
     OzonRateLimiter,
     OzonRateLimiterConfig,
@@ -33,19 +43,25 @@ from intelbit_river_connector_ozon.rate_limiter import (
 from intelbit_river_connector_ozon.stocks import OzonStocksClient
 from intelbit_river_connector_ozon.webhooks import OzonWebhookReceiver
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"
 
 __all__ = [
+    "AttributesPage",
     "FulfillmentType",
     "OzonApiError",
     "OzonAuth",
     "OzonConnector",
     "OzonError",
+    "OzonImage",
     "OzonOrdersClient",
     "OzonPosting",
     "OzonPrice",
     "OzonPricesClient",
     "OzonProduct",
+    "OzonProductAttribute",
+    "OzonProductAttributes",
+    "OzonProductInfo",
+    "OzonProductsClient",
     "OzonRateLimitError",
     "OzonRateLimiter",
     "OzonRateLimiterConfig",
@@ -56,6 +72,8 @@ __all__ = [
     "PostingsList",
     "PriceInfo",
     "PriceUpdate",
+    "ProductListItem",
+    "ProductListPage",
     "StockInfo",
     "StockUpdate",
     "TokenBucket",

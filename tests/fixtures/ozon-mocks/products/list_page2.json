@@ -1,0 +1,358 @@
+{
+  "result": {
+    "items": [
+      {
+        "product_id": 101,
+        "offer_id": "CF-0101",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 102,
+        "offer_id": "CF-0102",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 103,
+        "offer_id": "CF-0103",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 104,
+        "offer_id": "CF-0104",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 105,
+        "offer_id": "CF-0105",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 106,
+        "offer_id": "CF-0106",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 107,
+        "offer_id": "CF-0107",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 108,
+        "offer_id": "CF-0108",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 109,
+        "offer_id": "CF-0109",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 110,
+        "offer_id": "CF-0110",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 111,
+        "offer_id": "CF-0111",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 112,
+        "offer_id": "CF-0112",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 113,
+        "offer_id": "CF-0113",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 114,
+        "offer_id": "CF-0114",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 115,
+        "offer_id": "CF-0115",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 116,
+        "offer_id": "CF-0116",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 117,
+        "offer_id": "CF-0117",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 118,
+        "offer_id": "CF-0118",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 119,
+        "offer_id": "CF-0119",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 120,
+        "offer_id": "CF-0120",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 121,
+        "offer_id": "CF-0121",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 122,
+        "offer_id": "CF-0122",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 123,
+        "offer_id": "CF-0123",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 124,
+        "offer_id": "CF-0124",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 125,
+        "offer_id": "CF-0125",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 126,
+        "offer_id": "CF-0126",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 127,
+        "offer_id": "CF-0127",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 128,
+        "offer_id": "CF-0128",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 129,
+        "offer_id": "CF-0129",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 130,
+        "offer_id": "CF-0130",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 131,
+        "offer_id": "CF-0131",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 132,
+        "offer_id": "CF-0132",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 133,
+        "offer_id": "CF-0133",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 134,
+        "offer_id": "CF-0134",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 135,
+        "offer_id": "CF-0135",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 136,
+        "offer_id": "CF-0136",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 137,
+        "offer_id": "CF-0137",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 138,
+        "offer_id": "CF-0138",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 139,
+        "offer_id": "CF-0139",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 140,
+        "offer_id": "CF-0140",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 141,
+        "offer_id": "CF-0141",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 142,
+        "offer_id": "CF-0142",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 143,
+        "offer_id": "CF-0143",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 144,
+        "offer_id": "CF-0144",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 145,
+        "offer_id": "CF-0145",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 146,
+        "offer_id": "CF-0146",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 147,
+        "offer_id": "CF-0147",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 148,
+        "offer_id": "CF-0148",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 149,
+        "offer_id": "CF-0149",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      },
+      {
+        "product_id": 150,
+        "offer_id": "CF-0150",
+        "has_fbs_stocks": true,
+        "has_fbo_stocks": false,
+        "archived": false
+      }
+    ],
+    "total": 150,
+    "last_id": ""
+  }
+}

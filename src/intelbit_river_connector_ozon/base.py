@@ -32,6 +32,10 @@ class OzonHttpClient:
         # _transport — для contract-тестов через httpx.ASGITransport (мок Ozon).
         self._transport = _transport
 
+    async def post(self, path: str, payload: dict[str, Any]) -> dict[str, Any]:
+        """Публичный POST для клиентов-композиций (например, OzonProductsClient)."""
+        return await self._post(path, payload)
+
     async def _post(self, path: str, payload: dict[str, Any]) -> dict[str, Any]:
         """POST JSON на endpoint Ozon. Возвращает разобранное тело при code == 0."""
         await self._rate_limiter.acquire(path)
