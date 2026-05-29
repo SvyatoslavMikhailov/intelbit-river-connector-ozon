@@ -1,0 +1,6 @@
+{
+  "result": [
+    {"product_id": 555001, "offer_id": "CF-001", "updated": true, "errors": []},
+    {"product_id": 555002, "offer_id": "FD-010", "updated": true, "errors": []}
+  ]
+}
