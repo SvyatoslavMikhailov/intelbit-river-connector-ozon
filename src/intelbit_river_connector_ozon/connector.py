@@ -34,9 +34,7 @@ class OzonConnector:
             api_key=str(config["api_key"]),
         )
         rate_cfg = config.get("rate_limits")
-        rate_limiter = OzonRateLimiter(
-            OzonRateLimiterConfig(**rate_cfg) if rate_cfg else None
-        )
+        rate_limiter = OzonRateLimiter(OzonRateLimiterConfig(**rate_cfg) if rate_cfg else None)
 
         self.orders = OzonOrdersClient(self._auth, base_url, rate_limiter)
         self.stocks = OzonStocksClient(self._auth, base_url, rate_limiter)

@@ -46,9 +46,7 @@ async def test_update_with_old_and_min_price(prices: OzonPricesClient) -> None:
 
 @respx.mock
 async def test_update_minimal_body_omits_empty(prices: OzonPricesClient) -> None:
-    route = respx.post(PRICES_PATH).mock(
-        return_value=httpx.Response(200, json={"result": []})
-    )
+    route = respx.post(PRICES_PATH).mock(return_value=httpx.Response(200, json={"result": []}))
     await prices.update_prices([PriceUpdate(product_id=1, price="100.00")])
     item = json.loads(route.calls.last.request.content)["prices"][0]
     assert "old_price" not in item
@@ -58,9 +56,7 @@ async def test_update_minimal_body_omits_empty(prices: OzonPricesClient) -> None
 
 @respx.mock
 async def test_update_batch_over_1000_splits(prices: OzonPricesClient) -> None:
-    route = respx.post(PRICES_PATH).mock(
-        return_value=httpx.Response(200, json={"result": []})
-    )
+    route = respx.post(PRICES_PATH).mock(return_value=httpx.Response(200, json={"result": []}))
     updates = [PriceUpdate(product_id=i, price="10.00") for i in range(2300)]
     await prices.update_prices(updates)
     # 2300 → 3 чанка (1000+1000+300)

@@ -48,12 +48,8 @@ async def test_update_reports_per_item_error(stocks: OzonStocksClient) -> None:
 
 @respx.mock
 async def test_update_batch_over_100_splits(stocks: OzonStocksClient) -> None:
-    route = respx.post(STOCKS_PATH).mock(
-        return_value=httpx.Response(200, json={"result": []})
-    )
-    updates = [
-        StockUpdate(product_id=i, stock=1, warehouse_id=22222) for i in range(250)
-    ]
+    route = respx.post(STOCKS_PATH).mock(return_value=httpx.Response(200, json={"result": []}))
+    updates = [StockUpdate(product_id=i, stock=1, warehouse_id=22222) for i in range(250)]
     await stocks.update_stocks(updates)
     # 250 → 3 чанка (100+100+50)
     assert route.call_count == 3
@@ -63,12 +59,8 @@ async def test_update_batch_over_100_splits(stocks: OzonStocksClient) -> None:
 
 @respx.mock
 async def test_update_body_shape(stocks: OzonStocksClient) -> None:
-    route = respx.post(STOCKS_PATH).mock(
-        return_value=httpx.Response(200, json={"result": []})
-    )
-    await stocks.update_stocks(
-        [StockUpdate(product_id=1, stock=7, warehouse_id=9, offer_id="X-1")]
-    )
+    route = respx.post(STOCKS_PATH).mock(return_value=httpx.Response(200, json={"result": []}))
+    await stocks.update_stocks([StockUpdate(product_id=1, stock=7, warehouse_id=9, offer_id="X-1")])
     item = json.loads(route.calls.last.request.content)["stocks"][0]
     assert item == {"product_id": 1, "stock": 7, "warehouse_id": 9, "offer_id": "X-1"}
 
