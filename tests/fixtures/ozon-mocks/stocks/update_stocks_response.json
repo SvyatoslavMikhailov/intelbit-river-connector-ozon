@@ -1,0 +1,6 @@
+{
+  "result": [
+    {"product_id": 555001, "offer_id": "CF-001", "warehouse_id": 22222, "updated": true, "errors": []},
+    {"product_id": 555002, "offer_id": "FD-010", "warehouse_id": 22222, "updated": false, "errors": [{"code": "INVALID_STATE", "message": "товар не в продаже"}]}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "result": {
+    "items": [
+      {"product_id": 555001, "offer_id": "CF-001", "stocks": [{"present": 120, "reserved": 5}]},
+      {"product_id": 555002, "offer_id": "FD-010", "stocks": [{"present": 40, "reserved": 2}]}
+    ]
+  }
+}
