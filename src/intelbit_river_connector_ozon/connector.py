@@ -36,9 +36,11 @@ class OzonConnector:
         rate_cfg = config.get("rate_limits")
         rate_limiter = OzonRateLimiter(OzonRateLimiterConfig(**rate_cfg) if rate_cfg else None)
 
-        self.orders = OzonOrdersClient(self._auth, base_url, rate_limiter)
-        self.stocks = OzonStocksClient(self._auth, base_url, rate_limiter)
-        self.prices = OzonPricesClient(self._auth, base_url, rate_limiter)
+        # transport — только для contract-тестов (httpx.ASGITransport на мок Ozon).
+        transport = config.get("transport")
+        self.orders = OzonOrdersClient(self._auth, base_url, rate_limiter, transport)
+        self.stocks = OzonStocksClient(self._auth, base_url, rate_limiter, transport)
+        self.prices = OzonPricesClient(self._auth, base_url, rate_limiter, transport)
         self.webhooks = OzonWebhookReceiver(config.get("webhook"))
         self._redis_client = config.get("redis_client")
 

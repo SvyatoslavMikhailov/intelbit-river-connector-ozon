@@ -19,10 +19,18 @@ class OzonHttpClient:
     httpx.AsyncClient открывается и закрывается на каждый запрос.
     """
 
-    def __init__(self, auth: OzonAuth, base_url: str, rate_limiter: OzonRateLimiter) -> None:
+    def __init__(
+        self,
+        auth: OzonAuth,
+        base_url: str,
+        rate_limiter: OzonRateLimiter,
+        _transport: httpx.AsyncBaseTransport | None = None,
+    ) -> None:
         self._auth = auth
         self._base_url = base_url.rstrip("/")
         self._rate_limiter = rate_limiter
+        # _transport — для contract-тестов через httpx.ASGITransport (мок Ozon).
+        self._transport = _transport
 
     async def _post(self, path: str, payload: dict[str, Any]) -> dict[str, Any]:
         """POST JSON на endpoint Ozon. Возвращает разобранное тело при code == 0."""
@@ -32,7 +40,7 @@ class OzonHttpClient:
         attempts = self._rate_limiter.max_retries
         last_retry_after = 0.0
         for attempt in range(attempts + 1):
-            async with httpx.AsyncClient(timeout=30.0) as client:
+            async with httpx.AsyncClient(timeout=30.0, transport=self._transport) as client:
                 resp = await client.post(url, headers=self._auth.headers(), json=payload)
 
             if resp.status_code == 429:
