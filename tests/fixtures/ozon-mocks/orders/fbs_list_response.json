@@ -1,0 +1,57 @@
+{
+  "result": {
+    "postings": [
+      {
+        "posting_number": "12345678-0001-1",
+        "order_id": 111001,
+        "order_number": "12345678-0001",
+        "status": "awaiting_packaging",
+        "in_process_at": "2026-05-28T10:00:00Z",
+        "warehouse_id": 22222,
+        "tracking_number": "",
+        "products": [
+          {"sku": 123456, "name": "Care Friend подушка", "offer_id": "CF-001", "quantity": 2, "price": "1990.00", "currency_code": "RUB"}
+        ]
+      },
+      {
+        "posting_number": "12345678-0002-1",
+        "order_id": 111002,
+        "order_number": "12345678-0002",
+        "status": "awaiting_deliver",
+        "in_process_at": "2026-05-28T10:05:00Z",
+        "warehouse_id": 22222,
+        "products": [
+          {"sku": 123457, "name": "Fidelica плед", "offer_id": "FD-010", "quantity": 1, "price": "3490.00", "currency_code": "RUB"}
+        ]
+      },
+      {
+        "posting_number": "12345678-0003-1",
+        "order_id": 111003,
+        "order_number": "12345678-0003",
+        "status": "delivering",
+        "in_process_at": "2026-05-28T10:10:00Z",
+        "warehouse_id": 22222,
+        "products": []
+      },
+      {
+        "posting_number": "12345678-0004-1",
+        "order_id": 111004,
+        "order_number": "12345678-0004",
+        "status": "delivered",
+        "in_process_at": "2026-05-28T10:15:00Z",
+        "warehouse_id": 33333,
+        "products": []
+      },
+      {
+        "posting_number": "12345678-0005-1",
+        "order_id": 111005,
+        "order_number": "12345678-0005",
+        "status": "cancelled",
+        "in_process_at": "2026-05-28T10:20:00Z",
+        "warehouse_id": 33333,
+        "products": []
+      }
+    ],
+    "has_next": true
+  }
+}

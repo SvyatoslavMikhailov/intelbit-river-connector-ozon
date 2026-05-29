@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "intelbit-river-connector-ozon"
-version = "0.0.1"
+version = "0.2.0"
 description = "Коннектор Ozon Seller API для Интелбит:Река"
 authors = [{ name = "Святослав Михайлов", email = "vceo@intelbit.ru" }]
 readme = "README.md"
@@ -17,7 +17,16 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["ruff", "mypy", "pytest", "pytest-asyncio", "pytest-httpx", "respx", "types-PyYAML"]
+dev = [
+    "ruff",
+    "mypy",
+    "pytest",
+    "pytest-asyncio",
+    "pytest-httpx",
+    "respx",
+    "fakeredis",
+    "types-PyYAML",
+]
 
 [project.urls]
 Homepage = "https://github.com/SvyatoslavMikhailov/intelbit-river-connector-ozon"
@@ -29,7 +38,9 @@ target-version = "py312"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "N", "UP", "B", "SIM", "RUF"]
-ignore = ["RUF001", "RUF002"]
+# RUF001/002/003 — кириллические «двойники» в идентификаторах/докстрингах/комментариях.
+# Проект ведёт комментарии по-русски, правила дают ложные срабатывания.
+ignore = ["RUF001", "RUF002", "RUF003"]
 
 [tool.mypy]
 python_version = "3.12"
