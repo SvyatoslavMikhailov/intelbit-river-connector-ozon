@@ -31,3 +31,7 @@ Ozon → webhook (новый заказ) → Река (workflow-engine) → 1С 
 - Большинство методов: ~1 req/s
 - Импорт цен/остатков: пакетные (до 1000 позиций за вызов)
 - Детали: [docs/OZON_API_QUIRKS.md](OZON_API_QUIRKS.md)
+
+## Подключение river-sdk
+
+Этот коннектор пока не зависит от `river-sdk`. При будущей привязке использовать **публичный git-тег** `intelbit-river-sdk @ vX.Y.Z` (репозиторий `SvyatoslavMikhailov/intelbit-river-sdk`), **не** path в приватный `intelbit-river-monorepo`.
